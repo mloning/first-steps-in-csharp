@@ -9,8 +9,9 @@ Follow the installation instructions [here](<https://learn.microsoft.com/en-us/d
 Set up a new project:
 
 ```bash
-dotnet new console
+dotnet new <project-type>
 dotnet new gitignore
+dotnet add package <package-name>
 ```
 
 Compile and run a project:
@@ -21,4 +22,5 @@ dotnet run
 
 ## Tutorials
 
-<https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/>
+* [fibonacci](<https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/>)
+* [webapi](<https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0>)
