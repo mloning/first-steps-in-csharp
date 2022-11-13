@@ -12,10 +12,8 @@ Open the docs:
 open https://localhost:3000/swagger
 ```
 
-Test the API:
+Test the API with [http-repl](https://learn.microsoft.com/en-us/aspnet/core/web-api/http-repl/?view=aspnetcore-6.0):
 
 ```bash
-curl -X 'GET' \
-  'https://localhost:3000/WeatherForecast' \
-  -H 'accept: text/plain'
+httprepl https://localhost:3000/api/todoitems
 ```
