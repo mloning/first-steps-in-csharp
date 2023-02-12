@@ -1,8 +1,20 @@
 # First steps in C# and .NET
 
-## Installation
+## Setup
 
 Follow the installation instructions [here](<https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/local-environment>).
+
+## Tutorials
+
+| Name | Description |
+|---|---|
+| [fibonacci] | Console app to compute Fibonacci series of given length |
+| [webapi] | Web API for weather data |
+| [ui] | Blazor web app for counter and to-do list |
+
+[fibonacci]: <https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/>
+[webapi]: <https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0>
+[ui]: <https://learn.microsoft.com/en-gb/training/modules/build-blazor-webassembly-visual-studio-code/>
 
 ## Dev workflow
 
@@ -19,8 +31,3 @@ Compile and run a project:
 ```bash
 dotnet run
 ```
-
-## Tutorials
-
-* [fibonacci](<https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/>)
-* [webapi](<https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0>)
