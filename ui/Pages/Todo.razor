@@ -1,0 +1,36 @@
+﻿@page "/todo"
+<!-- Page title with number of unfinished todo items -->
+<h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
+
+<!-- unordered list (ul) with list items (li) -->
+<ul style="list-style: none; padding: 0; margin: 0">
+    @foreach (var todo in todos)
+    {
+        <li>
+            <input type="checkbox" @bind="todo.IsDone" />
+            <input @bind="todo.Title" />
+        </li>
+    }
+</ul>
+
+<!-- user input for title of new todo item -->
+<button @onclick="AppendTodoItem"> + </button>
+<input placeholder="Something todo" @bind="newTodoTitle" />
+
+@code {
+    private List<TodoItem> todos = new();
+    private string? newTodoTitle;
+
+    // append new todo item
+    private void AppendTodoItem()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodoTitle))
+        {
+            // add new todo item to list
+            todos.Add(new TodoItem { Title = newTodoTitle });
+
+            // clear title placeholder of new todo item
+            newTodoTitle = string.Empty;
+        }
+    }
+}
